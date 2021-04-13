@@ -128,18 +128,17 @@
   </section>
   <label id="itsonewb" text="ITSoneWB" version="" />
   <section name="ITSoneDB" id="its1db_upload">
-    <tool file="/home/galaxy/itsonewb/ITS1_parser_ITSoneDB_wrapper/ITS1_mapper_and_parser_ITSoneDB_wrapper.xml" />
-    <tool file="/home/galaxy/itsonewb/itsonedb_wrapper/itsonedb_wrapper.xml" />
+    <tool file="/opt/itsonewb/ITS1_parser_ITSoneDB_wrapper/ITS1_mapper_and_parser_ITSoneDB_wrapper.xml" />
+    <tool file="/opt/itsonewb/itsonedb_wrapper/itsonedb_wrapper.xml" />
   </section>
   <section name="BioMaS" id="biomas">
-    <!--tool file="/home/galaxy/itsonewb/biomas_wrapper/biomas_wrapper.xml" /-->
-    <tool file="/home/galaxy/biomas_cpy_wrapper/biomas_wrapper.xml" />
+    <tool file="/opt/biomas_2_wrapper/biomas_wrapper.xml" />
   </section>
   <section name="Barcoding Gap" id="barcoding_gap">
-    <tool file="/home/galaxy/itsonewb/barcoding_gap_wrapper/barcoding_gap_wrapper.xml" />
+    <tool file="/opt/itsonewb/barcoding_gap_wrapper/barcoding_gap_wrapper.xml" />
   </section>
   <section name="Primer Design" id="primer_design">
-    <tool file="/home/galaxy/itsonewb/mopo16s_wrapper/mopo16s_wrapper.xml" />
-    <tool file="/home/galaxy/itsonewb/prepare_primer_inference_files_wrapper/prepare_input_file2primer_inference.xml" />
+    <tool file="/opt/itsonewb/mopo16s_wrapper/mopo16s_wrapper.xml" />
+    <tool file="/opt/itsonewb/prepare_primer_inference_files_wrapper/prepare_input_file2primer_inference.xml" />
   </section>
 </toolbox>
