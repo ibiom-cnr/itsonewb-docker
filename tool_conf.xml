@@ -129,10 +129,11 @@
   <label id="itsonewb" text="ITSoneWB" version="" />
   <section name="ITSoneDB" id="its1db_upload">
     <tool file="/opt/itsonewb/ITS1_parser_ITSoneDB_wrapper/ITS1_mapper_and_parser_ITSoneDB_wrapper.xml" />
-    <tool file="/opt/itsonewb/itsonedb_wrapper/itsonedb_wrapper.xml" />
+    <tool file="/opt/itsonewb/itsonedb_wrapper/docker_version/itsonedb_wrapper.xml" />
+    <!--tool file="/opt/itsonewb/itsonedb_wrapper/itsonedb_wrapper.xml" /-->
   </section>
   <section name="BioMaS" id="biomas">
-    <tool file="/opt/biomas_2_wrapper/biomas_wrapper.xml" />
+    <tool file="/opt/itsonewb/biomas_2_wrapper/biomas_wrapper.xml" />
   </section>
   <section name="Barcoding Gap" id="barcoding_gap">
     <tool file="/opt/itsonewb/barcoding_gap_wrapper/barcoding_gap_wrapper.xml" />
