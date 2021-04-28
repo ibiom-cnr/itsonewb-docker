@@ -37,7 +37,9 @@ RUN cp $GALAXY_ROOT/static/style/base.css $GALAXY_CONFIG_DIR/web/style/base.css
 
 
 # Configure CVMFS
-ADD https://raw.githubusercontent.com/indigo-dc/Reference-data-galaxycloud-repository/master/cvmfs_server_config_files/data.elixir-italy-cvmfs.conf /etc/cvmfs/config.d/data.elixir-italy-cvmfs.conf
+ADD data.elixir-italy-cvmfs.conf /etc/cvmfs/config.d/data.elixir-italy-cvmfs.conf
+ADD default.local /etc/cvmfs/default.local
+ADD data.elixir-italy-cvmfs.pub /etc/cvmfs/keys/data.elixir-italy-cvmfs.pub
 
 # Expose port 80, 443 (webserver), 21 (FTP server), 8800 (Proxy), 9002 (supvisord web app)
 EXPOSE :21
