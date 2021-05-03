@@ -31,10 +31,15 @@ RUN mkdir -p $GALAXY_CONFIG_DIR/web/style
 RUN cp $GALAXY_ROOT/static/style/base.css $GALAXY_CONFIG_DIR/web/style/base.css
 
 # Install and Configure ITSoneWB Connector
+# Nothing to do
 
 # Install BioMaS
-
-
+RUN apt-get -qq update && apt-get install -y virtualenv gcc python-dev libfontconfig xvfb && \
+    virtualenv /opt/build_biomas_venv && \
+    . /opt/build_biomas_venv/bin/activate && \
+    pip install cython && \
+    cd $ITSONEWB_DIR/biomas_2_wrapper && \
+    python setup.py build_ext --inplace
 
 # Configure CVMFS
 ADD data.elixir-italy-cvmfs.conf /etc/cvmfs/config.d/data.elixir-italy-cvmfs.conf
