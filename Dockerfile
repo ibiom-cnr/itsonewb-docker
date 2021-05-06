@@ -34,7 +34,7 @@ RUN cp $GALAXY_ROOT/static/style/base.css $GALAXY_CONFIG_DIR/web/style/base.css
 # Nothing to do
 
 # Install BioMaS
-RUN apt-get -qq update && apt-get install -y virtualenv gcc python-dev libfontconfig xvfb && \
+RUN apt-get -qq update && apt-get install -y virtualenv gcc python-dev libfontconfig xvfb libtbb-dev && \
     virtualenv /opt/build_biomas_venv && \
     . /opt/build_biomas_venv/bin/activate && \
     pip install cython && \

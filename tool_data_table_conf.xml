@@ -144,9 +144,10 @@
     <!-- ITSoneWB loc files -->
     <!-- -->
     <!-- Locations of indexes in the Bowtie2 mapper format -->
+    <!--
     <table name="biomas_bowtie2_indexes" comment_char="#">
         <columns>value, dbkey, name, path</columns>
-        <file path="tool-data/biomas_bowtie2_indexes.loc" />
+        <file path="data/biomas_bowtie2_indexes.loc" />
     </table>
     <table name="biomas_mapping_files" comment_char="#">
         <columns>value, name, path</columns>
@@ -156,53 +157,55 @@
         <columns>value, name, path</columns>
         <file path="tool-data/biomas_tango_indexes.loc" />
     </table>
+    -->
     <!-- ITSoneDB connector loc files for  menu -->
     <table name="itsonedb_accession_list" comment_char="#">
         <columns>value</columns>
-        <file path="/opt/itsonewb/itsonedb_wrapper/tool-data/accessions_r138_sorted.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/accessions_r138.loc" />
     </table>
     <table name="itsonedb_taxon_name_list" comment_char="#">
         <columns>value</columns>
-        <file path="/opt/itsonewb/itsonedb_wrapper/tool-data/taxon_names_r138_sorted.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/taxon_names_r138.loc" />
     </table>
     <table name="itsonedb_specie_list" comment_char="#">
         <columns>value</columns>
-        <file path="/opt/itsonewb/itsonedb_wrapper/tool-data/species_r138_sorted.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/species_r138.loc" />
     </table>
     <!-- Location of base file for ITS1 mapper and parser for ITSoneDB -->
     <table name="ITS1_mapper_and_parser_ITSoneDB" comment_char="#">
         <columns>value, name, path</columns>
-        <file path="tool-data/ITS1_mapper_and_parser_ITSoneDB_fasta.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/ITS1_mapper_and_parser_ITSoneDB_fasta.loc" />
     </table>
     <!-- Barcoding gap loc files -->
     <table name="barcoding_gap_files" comment_char="#">
         <columns>value, path</columns>
-        <file path="tool-data/barcoding_gap_files.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/barcoding_gap_files.loc" />
     </table>
     <table name="barcoding_gap_taxon_list_file" comment_char="#">
         <columns>value, rank, specie</columns>
-        <file path="/export/barcoding_gap/data_01022019/all_taxon_list_and_families_sorted.csv" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/barcoding_gap/data_01022019/all_taxon_list_and_families_sorted.csv" />
     </table>
     <!-- Location of the mopo16s initial primer pairs file-->
     <table name="mopo16s_initial_primer_pairs_file" comment_char="#">
         <columns>value, name, path</columns>
-        <file path="tool-data/mopo16s_initial_primer_pairs_file.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/mopo16s_initial_primer_pairs_file.loc" />
     </table>
     <!-- Location of base file to prepare primer inference file -->
     <table name="prepare_primer_inference_files" comment_char="#">
         <columns>value, name, path</columns>
-        <file path="tool-data/prepare_primer_inference_files.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/prepare_primer_inference_files.loc" />
     </table>
     <!-- Locations of indexes for BioMaS 2 -->
     <table name="biomas2_bowtie2_indexes" comment_char="#">
         <columns>value, dbkey, name, path</columns>
-        <file path="tool-data/biomas2_bowtie2_indexes.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/biomas2_bowtie2_indexes.loc" />
     </table>
     <table name="biomas2_resources" comment_char="#">
         <columns>value, name, path</columns>
-        <file path="tool-data/biomas2_resources.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/biomas2_resources.loc" />
     </table>
     <!-- Locations of indexes for Qiime 2 -->
+    <!--
     <table name="qiime2_rep_set" comment_char="#">
         <columns>value, name, dbkey, path</columns>
         <file path="tool-data/qiime2_rep_set.loc" />
@@ -211,7 +214,9 @@
         <columns>value, name, dbkey, path</columns>
         <file path="tool-data/qiime2_taxonomy.loc" />
     </table>
+    -->
     <!-- Locations of indexes for Qiime -->
+    <!--
     <table name="qiime_rep_set" comment_char="#">
         <columns>value, name, dbkey, path</columns>
         <file path="tool-data/qiime_rep_set.loc" />
@@ -228,7 +233,9 @@
         <columns>value, name, dbkey, path</columns>
         <file path="tool-data/qiime_trees.loc" />
     </table>
+    -->		    
     <!-- Locations of indexes for Mothur -->
+    <!--
     <table name="mothur_aligndb" comment_char="#" allow_duplicate_entries="False">
       <columns>name, value</columns>
       <file path="tool-data/mothur_aligndb.loc" />
@@ -245,4 +252,5 @@
       <columns>name, value</columns>
       <file path="tool-data/mothur_taxonomy.loc" />
     </table>
+    -->
 </tables>
