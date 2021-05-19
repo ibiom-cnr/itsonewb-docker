@@ -144,11 +144,11 @@
     <!-- ITSoneWB loc files -->
     <!-- -->
     <!-- Locations of indexes in the Bowtie2 mapper format -->
-    <!--
     <table name="biomas_bowtie2_indexes" comment_char="#">
         <columns>value, dbkey, name, path</columns>
-        <file path="data/biomas_bowtie2_indexes.loc" />
+        <file path="/cvmfs/data.elixir-italy-cvmfs/itsonewb/location/biomas_bowtie2_indexes.loc" />
     </table>
+    <!--
     <table name="biomas_mapping_files" comment_char="#">
         <columns>value, name, path</columns>
         <file path="tool-data/biomas_mapping_files.loc" />

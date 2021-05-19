@@ -41,6 +41,28 @@ RUN apt-get -qq update && apt-get install -y virtualenv gcc python-dev libfontco
     cd $ITSONEWB_DIR/biomas_2_wrapper && \
     python setup.py build_ext --inplace
 
+# Install Mopo16s
+RUN apt-get update --fix-missing && \
+    apt-get install -y build-essential gcc unzip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+ADD http://packages.seqan.de/seqan-src/seqan-src-2.1.1.tar.gz /home/galaxy
+
+RUN cd /home/galaxy && \
+    tar xvzf seqan-src-2.1.1.tar.gz && \
+    rm /home/galaxy/seqan-src-2.1.1.tar.gz
+
+ADD http://www.dei.unipd.it/~baruzzog/mopo16S/last_version/mopo16S.zip /home/galaxy
+
+RUN cd /home/galaxy && \
+    unzip /home/galaxy/mopo16S.zip && \
+    rm /home/galaxy/mopo16S.zip
+
+RUN sed -i 's$CXXFLAGS+=-I../../seqan-library-2.0.0/include$CXXFLAGS+=-I/home/galaxy/seqan-seqan-v2.1.1/include$g' /home/galaxy/mopo16s/Makefile.rules
+
+RUN cd /home/galaxy/mopo16s && make
+
 # Configure CVMFS
 ADD data.elixir-italy-cvmfs.conf /etc/cvmfs/config.d/data.elixir-italy-cvmfs.conf
 ADD default.local /etc/cvmfs/default.local
