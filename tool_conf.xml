@@ -136,7 +136,7 @@
     <tool file="/opt/itsonewb/biomas_2_wrapper/biomas_wrapper.xml" />
   </section>
   <section name="Barcoding Gap" id="barcoding_gap">
-    <tool file="/opt/itsonewb/barcoding_gap_wrapper/barcoding_gap_wrapper.xml" />
+    <tool file="/opt/itsonewb/barcoding_gap_wrapper/py3/barcoding_gap_wrapper.xml" />
   </section>
   <section name="Primer Design" id="primer_design">
     <tool file="/opt/itsonewb/mopo16s_wrapper/mopo16s_wrapper.xml" />
