@@ -63,6 +63,9 @@ RUN sed -i 's$CXXFLAGS+=-I../../seqan-library-2.0.0/include$CXXFLAGS+=-I/home/ga
 
 RUN cd /home/galaxy/mopo16s && make
 
+RUN chown -R galaxy:galaxy /home/galaxy/mopo16s
+RUN chown -R galaxy:galaxy /home/galaxy/seqan-seqan-v2.1.1
+
 # Configure CVMFS
 ADD data.elixir-italy-cvmfs.conf /etc/cvmfs/config.d/data.elixir-italy-cvmfs.conf
 ADD default.local /etc/cvmfs/default.local
